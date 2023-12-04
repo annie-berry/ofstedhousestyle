@@ -346,16 +346,15 @@
   </macro>
   <macro name="issued">
     <choose>
-      <if type="report article-newspaper article-magazine personal_communication" match="any">
+      <if type="article-newspaper article-magazine personal_communication webpage" match="any">
         <date variable="issued">
           <date-part name="day" suffix=" "/>
           <date-part name="month" suffix=" "/>
           <date-part name="year"/>
         </date>
       </if>
-      <else-if type="webpage" match="any">
+      <else-if type="report" match="any">
         <date variable="issued">
-          <date-part name="day" suffix=" "/>
           <date-part name="month" suffix=" "/>
           <date-part name="year"/>
         </date>
