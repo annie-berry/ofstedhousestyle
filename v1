@@ -81,7 +81,7 @@
         <text variable="genre"/>
       </if>
       <else-if type="bill graphic legislation motion_picture report song" match="any">
-        <text variable="title" text-case="title" font-style="italic"/>
+        <text variable="title" text-case="title" font-style="normal"/>
         <group delimiter=" " prefix=", ">
           <text term="version"/>
           <text variable="version"/>
@@ -91,7 +91,7 @@
         <text variable="title"/>
       </else-if>
       <else-if variable="reviewed-author">
-        <text variable="title" prefix="review of " font-style="italic"/>
+        <text variable="title" prefix="review of " font-style="normal"/>
       </else-if>
       <else>
         <text variable="title" text-case="sentence" quotes="true"/>
@@ -118,7 +118,7 @@
   <macro name="title-sort-substitute">
     <choose>
       <if type="bill book graphic legal_case legislation motion_picture report song" match="any">
-        <text variable="title" text-case="title" font-style="italic"/>
+        <text variable="title" text-case="title" font-style="normal"/>
       </if>
       <else>
         <text variable="title" text-case="title" quotes="true"/>
@@ -362,6 +362,7 @@
       </else-if>
       <else>
         <date variable="issued">
+          <date-part name="month" suffix=" "/>
           <date-part name="year"/>
         </date>
       </else>
