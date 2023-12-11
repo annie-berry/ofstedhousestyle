@@ -80,7 +80,7 @@
       <if variable="title" match="none">
         <text variable="genre"/>
       </if>
-      <else-if type="bill graphic legislation motion_picture report song" match="any">
+      <else-if type="bill graphic legislation motion_picture song" match="any">
         <text variable="title" text-case="title" font-style="normal"/>
         <group delimiter=" " prefix=", ">
           <text term="version"/>
@@ -105,7 +105,7 @@
           <if variable="title" match="none">
             <text macro="issued"/>
           </if>
-          <else-if type="bill book graphic legal_case legislation motion_picture report song" match="any">
+          <else-if type="bill book graphic legal_case legislation motion_picture song" match="any">
             <text form="short" variable="title" text-case="title" font-style="normal"/>
           </else-if>
           <else>
