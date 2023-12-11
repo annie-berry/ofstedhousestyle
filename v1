@@ -37,7 +37,7 @@
   <macro name="author">
     <group delimiter=". ">
       <names variable="author">
-        <initialise-with=" ">
+        <initialise-with=" "/>
         <name and="text" name-as-sort-order="first"/>
         <label form="short" suffix="." prefix=", "/>
         <substitute>
