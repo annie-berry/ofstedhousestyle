@@ -301,7 +301,7 @@
   </macro>
   <macro name="contributors-short">
     <names variable="author">
-      <name and="text"/>
+      <name and="text"/ initialize-with=""/>
       <substitute>
         <names variable="editor"/>
         <names variable="translator"/>
