@@ -359,6 +359,11 @@
           <date-part name="year"/>
         </date>
       </else-if>
+      <else-if type="article-journal" match="any">
+        <date variable="issued">
+          <date-part name="year"/>
+        </date>
+      </else-if>
       <else>
         <date variable="issued">
           <date-part name="month" suffix=" "/>
