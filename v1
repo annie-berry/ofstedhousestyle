@@ -197,7 +197,6 @@
       <if type="article-journal">
         <group>
           <text variable="volume" suffix=", " prefix="Volume "/>
-          <text variable="issue" prefix="Number "/>
         </group>
       </if>
       <else-if type="bill book chapter graphic legal_case legislation motion_picture paper-conference report song" match="any">
